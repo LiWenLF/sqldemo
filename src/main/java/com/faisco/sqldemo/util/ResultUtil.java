@@ -17,10 +17,10 @@ public class ResultUtil {
         return success(null);
     }
 
-    public static Result error(Integer code,String resultResult){
+    public static Result error(Integer code,String msg){
         Result Result=new Result();
         Result.setCode(code);
-        Result.setMsg(resultResult);
+        Result.setMsg(msg);
         return Result;
     }
 
